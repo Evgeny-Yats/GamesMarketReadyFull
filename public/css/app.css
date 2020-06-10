@@ -3830,6 +3830,14 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+.dropdown-menu a:hover {
+  background: #ff7675;
+  color: #ffffff;
+}
+.dropdown-menu a:focus {
+  background: #425acf;
+}
+
 .dropdown-menu-right {
   right: 0;
   left: auto;
