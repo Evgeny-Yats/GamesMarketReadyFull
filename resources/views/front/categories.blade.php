@@ -18,22 +18,26 @@
 
 
                     <div class="d-flex">
-                        <div class="form-group d-flex">
-                            <label for="name" class="fl">Имя</label>
-                            <input type="text" class="myClass" name="name" value="{{ request()->name }}">
+                        <div class="form-group namefilter">
+                            <label for="name" class="filterLabel">Название</label>
+                            <input type="text" class="cart-control dsds" name="name" value="{{ request()->name }}">
                         </div>
 
                         <div class="form-group d-flex">
-                            <label for="price_from" class="fl">Цена от</label>
-                            <input type="text" class="myClass" name="price_from" value="{{ request()->price_from }}">
-                            <label for="price_to" class="fl">Цена до</label>
-                            <input type="text" class="myClass" name="price_to" value="{{ request()->price_to }}">
+                            <div class="filterdiv">
+                                <label for="price_from" class="filterLabel">Цена от</label>
+                                <input type="text" class="cart-control mini" name="price_from" value="{{ request()->price_from }}">
+                            </div>
+                            <div class="filterdiv">
+                                <label for="price_to" class="filterLabel">Цена до</label>
+                                <input type="text" class="cart-control mini" name="price_to" value="{{ request()->price_to }}">
+                            </div>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary fg">Применить</button>
+                    <button type="submit" class="btn-modal mr">Применить</button>
 
-                    <a href="{{route('categories' , $cats->id)}}" class="btn btn-danger dg fg">Сбросить</a>
+                    <a href="{{route('categories' , $cats->id)}}" class="resetfilter btn-modal dg mr">Сбросить</a>
 
                 </form>
             </aside>

@@ -57,7 +57,7 @@ img {
   position: absolute;
   top: 57px;
   left: -194px;
-  width: 115%;
+  width: 115% !important;
   color: #282828;
   font-size: 11px;
 }
@@ -1554,6 +1554,7 @@ a img.aligncenter {
 
 .cart-control {
   width: 100%;
+  display: block;
   border: 1px solid #e6e6e6;
   padding: 10px 20px;
   border-radius: 4px;
@@ -1561,6 +1562,39 @@ a img.aligncenter {
   box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,.2);
   /*1px 1px 2px 0px*/
   /*0 0 11px -7px*/
+}
+
+.close, .modals__cart-refresh:focus {
+  outline: none;
+}
+
+.btn-modal.mr {
+  margin-right: 5px;
+}
+
+.namefilter {
+  margin-right: 20px;
+}
+
+.resetfilter {
+  padding: 12px 22px;
+}
+
+.resetfilter:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart-control.dsds {
+  width: 300px;
+  max-width: 300px;
+}
+.filterdiv {
+  width: 80%;
+  margin-right: 20px;
+}
+.cart-control.mini {
+  width: 100%;
 }
 
 .cart-control:focus {
@@ -1617,5 +1651,3 @@ select:-webkit-autofill:focus {
   bottom: 0;
   opacity: 1;
 }
-
-
