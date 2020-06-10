@@ -110,10 +110,6 @@
                                 <div class="slider-title">{{ $pro->name }}</div></a>
                         </div>
                     @endforeach
-                    <div class="item">
-                        <a href="" class="a-slider"><img src="/img/slider/1.jpg" alt="">
-                            <div class="slider-title">1</div></a>
-                    </div>
                 </div>
             </div>
             <div class="content-middle">
