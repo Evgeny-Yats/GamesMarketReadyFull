@@ -2,7 +2,7 @@
 
 @section('main-content')
     <div class="row mb-3">
-        <h2 class="col-lg-12">Пользователи</h2>
+        <h2 class="col-lg-12 adminh2">Пользователи</h2>
     </div>
 
     <div class="row">

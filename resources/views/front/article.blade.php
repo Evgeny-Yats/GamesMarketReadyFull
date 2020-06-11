@@ -1,6 +1,6 @@
 @extends('layouts.main')
-@section('page-title')| Новости@endsection
-@section('content-title')Новости@endsection
+@section('page-title')| Новость {{$news->title}}@endsection
+@section('content-title')Новость@endsection
 
 @section('main-content')
     <div class="news-block content-text clearfix">

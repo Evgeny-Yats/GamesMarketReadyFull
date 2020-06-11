@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductsController extends Controller
 {
+    /**
+     *Вывод товаров, созданных пользователем
+     */
     public function index()
     {
 
@@ -19,6 +22,11 @@ class ProductsController extends Controller
         return view('admin.products', ['products' => $products]);
     }
 
+    /**
+     *Создание товара
+     @param Request $request
+     @return Response
+     */
     public function create(Request $request)
     {
         $categories = Categorie::all();
@@ -68,6 +76,11 @@ class ProductsController extends Controller
         return view('admin.productsCreate', ['categories' => $categories, 'message' => $message]);
     }
 
+    /**
+     *Редактирование товара
+     @param $product_id, Request $request
+     @return Response
+     */
     public function edit($product_id, Request $request)
     {
         $product = Product::find($product_id);
@@ -119,7 +132,11 @@ class ProductsController extends Controller
         return view('admin.productsEdit', ['product' => $product, 'categories' => $categories, 'message' => $message]);
     }
 
-
+    /**
+     *Удаление товара
+     @param $product_id
+     @return Response
+     */
     public function delete($product_id)
     {
 

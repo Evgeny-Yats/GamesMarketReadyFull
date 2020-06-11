@@ -11,12 +11,20 @@ use Illuminate\Support\Facades\Validator;
 
 class NewsController extends Controller
 {
+    /**
+     *Вывод новостей, созданных пользователем
+     */
     public function index()
     {
         $news = News::all();
         return view('admin.news', ['news' => $news]);
     }
 
+    /**
+     *Создание новости
+     @param Request $request
+     @return Response
+     */
     public function create(Request $request)
     {
         $message ='';
@@ -62,7 +70,11 @@ class NewsController extends Controller
         return view('admin.newsCreate', ['message' => $message]);
     }
 
-
+    /**
+     *Редактирование новости
+     @param $news_id, Request $request
+     @return Response
+     */
     public function edit($news_id, Request $request)
     {
         $news = News::find($news_id);
@@ -105,6 +117,11 @@ class NewsController extends Controller
         return view('admin.newsEdit', ['news' => $news, 'message' => $message]);
     }
 
+    /**
+     *Удаление новости
+     @param $news_id
+     @return Response
+     */
     public function delete($news_id)
     {
         $news = News::find($news_id);

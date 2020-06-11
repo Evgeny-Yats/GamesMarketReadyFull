@@ -36,7 +36,7 @@
 */
 
 body {
-  background-color: #436b39;
+  background-color: #03051c;
   background-image: url(/images/bg_main5.jpg?c3f921ecac12b900728c97062dd4817b);
   padding: 50px 0;
 }
@@ -57,7 +57,7 @@ img {
   position: absolute;
   top: 57px;
   left: -194px;
-  width: 115% !important;
+  width: 140% !important;
   color: #282828;
   font-size: 11px;
 }
@@ -461,7 +461,6 @@ a.authorization-block__link:hover {
 }
 
 .content-head__title-wrap {
-  padding-left: 10px;
   max-width: 380px;
 }
 
@@ -561,7 +560,7 @@ a.authorization-block__link:hover {
   font-size: 1.071rem;
   font-family: "PT_Sans", sans-serif;
   color: black;
-  line-height: 1.667rem;
+  /*line-height: 1.667rem;*/
   font-weight: normal;
 }
 
@@ -610,6 +609,7 @@ a.authorization-block__link:hover {
   padding: 8px 0;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 5px;
 }
 
 .product-container__content-text__price__value {
@@ -1194,7 +1194,8 @@ div.aligncenter {
 
 .alignleft {
   float: left;
-  margin: 5px 20px 20px 0;
+  /*margin: 5px 20px 20px 0;*/
+  margin: 5px 18px 0 0;
 }
 
 .aligncenter {

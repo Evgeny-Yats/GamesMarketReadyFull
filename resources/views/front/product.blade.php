@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('page-title')| Товары@endsection
+@section('page-title')| Товары {{$this_product->name}}@endsection
 @section('content-title'){{$this_product->name}} в разделе {{$this_product->categorie->name}}@endsection
 @section('main-content')
     <div class="product-container">
