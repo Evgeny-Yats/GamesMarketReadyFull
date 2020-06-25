@@ -1653,3 +1653,35 @@ select:-webkit-autofill:focus {
   bottom: 0;
   opacity: 1;
 }
+
+.range_slid {
+  position: relative;
+  width: 200px;
+}
+
+#volume {
+  position: absolute;
+  left: -20px;
+  padding: 7px 10px;
+  background: #ff5e4c;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px 10px 0 10px;
+}
+
+#fader {
+  -webkit-appearance: none;
+  background: #ff5e4c;
+  height: 10px;
+  width: 200px;
+  border-radius: 10px;
+  outline: none;
+}
+
+#fader::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ff9953;
+  border-radius: 50%;
+}

@@ -265,6 +265,11 @@ $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
 });
+
+    function outputUpdate(vol) {
+        var output = document.querySelector('#volume');
+        output.value = vol;
+    }
 </script>
 </body>
 </html>

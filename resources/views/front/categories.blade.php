@@ -31,6 +31,21 @@
                             <div class="filterdiv">
                                 <label for="price_to" class="filterLabel">Цена до</label>
                                 <input type="text" class="cart-control mini" name="price_to" value="{{ request()->price_to }}">
+                                <div class="range_slid">
+                                    <output for="fader" id="volume">
+                                        @if (!is_null(request()->range_price))
+                                            {{ request()->range_price }}
+                                        @else
+                                            0
+                                        @endif
+
+                                    </output>
+                                    <br>
+                                    <br>
+                                    <input type="range" name="range_price" class="lall" id="fader" min="0" max="10000"
+                                           value="{{ request()->range_price == null ? 0 : request()->range_price}}"
+                                           step="1" oninput="outputUpdate(value)">
+                                </div>
                             </div>
                         </div>
                     </div>

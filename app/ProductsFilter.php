@@ -49,6 +49,15 @@ class ProductsFilter extends Model
 
     }
 
+    public function range_price($value)
+    {
+        if (! $value) return;
+        $this->builder->where('price', '>=', $value);
+
+
+    }
+
+
     public function filters()
     {
         return $this->request->all();
